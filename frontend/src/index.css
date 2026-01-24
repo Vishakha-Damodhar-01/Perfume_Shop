@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --gold: #c5a059;
+  --dark: #1a1a1a;
+  --light-gray: #f9f9f9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-gray);
+  color: var(--dark);
+}
+
+h1, h2, .brand-name {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Container for the whole collection */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 5%;
+  background-color: #fdfdfd;
+}
+
+/* Individual Card Styling */
+.perfume-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* The Hover Effect required by your task */
+.perfume-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.perfume-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain; /* Keeps perfume bottles looking natural */
+  margin-bottom: 15px;
+}
+
+.perfume-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.perfume-card .price {
+  color: #b8860b; /* Gold color for luxury feel */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Ensure these variables are in your index.css */
+:root {
+  --gold: #c5a059;
+}
+
+.active-thumb {
+  border: 2px solid var(--gold) !important;
+  opacity: 0.8;
+}
+
+.add-review-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-review-box input, .add-review-box textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.submit-rev {
+  background: #1a1a1a;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
