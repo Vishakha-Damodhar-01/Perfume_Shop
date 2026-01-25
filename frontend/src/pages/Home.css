@@ -1,1 +1,116 @@
+/* Color Variables */
+:root {
+  --gold-primary: #c5a059;
+  --gold-light: #e2c999;
+  --deep-black: #121212;
+  --soft-white: #fafafa;
+  --glass: rgba(255, 255, 255, 0.85);
+}
 
+/* 1. Hero Banner Section */
+.hero-banner {
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero-content span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.9rem;
+  color: var(--gold-light);
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  margin: 20px 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.cta-button {
+  background: transparent;
+  color: white;
+  padding: 18px 45px;
+  border: 1.5px solid white;
+  margin-top: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+}
+
+.cta-button:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* 2. Product Grid Section */
+.product-section {
+  padding: 80px 5%;
+  background-color: var(--soft-white);
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--gold-primary);
+  margin: 15px auto;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 3. Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 4. Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
