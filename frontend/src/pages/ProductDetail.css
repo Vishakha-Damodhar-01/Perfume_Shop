@@ -1,0 +1,181 @@
+.product-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* Gallery Styles */
+.main-img-container img {
+  width: 80%;
+  height: 60%;
+  border-radius: 8px;
+  transition: 0.3s;
+  margin-left: 15%;
+}
+
+.thumbnail-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.thumbnail-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail-grid img.active-thumb {
+  border-color: var(--gold);
+}
+
+/* Review Styles */
+.reviews-section {
+  margin-top: 80px;
+  border-top: 1px solid #e2a7a7;
+  padding-top: 40px;
+}
+
+.review-card {
+  background: #e1e8c4;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.share-btn {
+  margin-top: 30px;
+  margin-right: 10px ;
+  background: transparent;
+  border: 1px solid #e84c4c;
+  border-radius: 5 px;
+  padding: 8px 15px;
+  cursor: pointer;
+  display: block;
+}
+.reviews-section {
+  margin-top: 50px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.review-card {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.review-card:last-child {
+  border-bottom: none;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.review-header strong {
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+.review-stars {
+  color: #c5a059; /* Luxury Gold */
+}
+
+.review-comment {
+  color: #666;
+  line-height: 1.6;
+}
+
+.thumbnail-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  margin-left: 40%;
+  margin-right: 20%;
+}
+
+.thumbnail-grid img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  
+}
+
+/* Gold border for selected thumbnail */
+.active-thumb {
+  border-color: #c5a059 !important;
+  opacity: 0.6;
+}
+
+.featured-image {
+  width: 80%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.reviews-section {
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
+}
+
+.review-card {
+  background: #fdfdfd;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.review-card strong {
+  display: block;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.add-review-form {
+  margin-top: 40px;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #eee;
+}
+
+.add-review-form input, .add-review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+
+.submit-rev-btn {
+  background: #1a1a1a;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.submit-rev-btn:hover {
+  background: #c5a059; /* Gold hover color */
+}
